@@ -26,7 +26,7 @@ const app = express()
 app.use(express.json())
 
 // CORS configuration to allow frontend dev servers and handle preflight
-const allowedOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173,http://localhost:5174,http://smart-blog-frontend-two.vercel.app").split(",")
+const allowedOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173,http://localhost:5174,http://https://event-management-fe-sand.vercel.app/").split(",")
 const corsOptions: cors.CorsOptions = {
   origin: (origin, callback) => {
     // Allow requests with no origin (like mobile apps or curl)
